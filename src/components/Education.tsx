@@ -6,30 +6,19 @@ import { SectionHeading } from './About';
 const timeline = [
   {
     title: 'Oriental Institute of Science and Technology',
-    subtitle: 'B.Tech — Computer Science (AI & ML)',
+    subtitle: 'B.Tech — Artificial Intelligence & Machine Learning',
     time: 'Sep 2022 – Jun 2026',
     description:
-      'Core engineering degree with specialization in Artificial Intelligence & Machine Learning. Focused on building systems end-to-end — from data structures and algorithms to production-grade full-stack applications.',
-    coursework: ['DSA', 'DBMS', 'OS', 'OOP', 'Software Engineering', 'Machine Learning'],
+      'Pursuing a Bachelor of Technology in Artificial Intelligence & Machine Learning with a strong focus on software engineering, backend development, data structures & algorithms, and AI-powered applications. Built multiple full-stack and machine learning projects while developing a solid foundation in computer science fundamentals.',
+    coursework: [
+      'Data Structures & Algorithms',
+      'DBMS',
+      'Operating Systems',
+      'Object-Oriented Programming',
+      'Software Engineering',
+      'Machine Learning',
+    ],
     color: 'from-brand-500 to-violet-500',
-  },
-  {
-    title: 'Class XII — Senior Secondary',
-    subtitle: 'Higher Secondary Education',
-    time: '2022',
-    description: 'Completed Class XII with an aggregate score of 76%.',
-    coursework: [],
-    color: 'from-emerald-500 to-teal-500',
-    metric: '76%',
-  },
-  {
-    title: 'Class X — Secondary',
-    subtitle: 'Secondary School Certificate',
-    time: '2020',
-    description: 'Completed Class X with an aggregate score of 89%.',
-    coursework: [],
-    color: 'from-amber-400 to-orange-500',
-    metric: '89%',
   },
 ];
 
@@ -37,7 +26,7 @@ export function Education() {
   return (
     <section id="education" className="relative section-padding">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <SectionHeading eyebrow="Academia" title="Education" subtitle="Formal academic journey and relevant coursework." />
+        <SectionHeading eyebrow="Academia" title="Education" subtitle="Academic foundation supporting my software engineering and AI journey." />
 
         <div className="mt-14 relative pl-6 sm:pl-0">
           <div className="absolute left-4 sm:left-10 top-2 bottom-2 w-px bg-gradient-to-b from-brand-500/40 via-violet-500/30 to-transparent" aria-hidden="true" />

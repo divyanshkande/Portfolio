@@ -6,7 +6,7 @@ import { SectionHeading } from './About';
 const experiences = [
   {
     icon: <FiCode className="h-5 w-5" />,
-    title: '500+ DSA Problems Solved',
+    title: '250+ DSA Problems Solved',
     org: 'LeetCode · Codeforces',
     time: 'Ongoing',
     bullets: [

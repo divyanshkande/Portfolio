@@ -14,7 +14,7 @@ const photos = [
   {
     src: 'https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=1200&auto=format&fit=crop',
     title: 'Team Brainstorm',
-    caption: 'White-boarding architecture with the team.',
+    
   },
   {
     src: 'https://images.unsplash.com/photo-1515168833906-d2a3b82b1440?q=80&w=1200&auto=format&fit=crop',

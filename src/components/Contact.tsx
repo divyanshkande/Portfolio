@@ -29,12 +29,12 @@ export function Contact() {
   return (
     <section id="contact" className="relative section-padding">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <SectionHeading eyebrow="Contact" title="Let's Build Together" subtitle="Have an opportunity, collaboration or idea in mind? I'd love to hear about it." />
+        <SectionHeading eyebrow="Contact" title="Let's Connect" subtitle="Open to software engineering opportunities, collaborations, and interesting projects." />
 
-        <div className="mt-14 grid gap-8 lg:grid-cols-5">
+        <div className="mt-14 flex justify-center">
           {/* Left — Info + socials */}
           <Reveal>
-            <div className="card-glow glass relative overflow-hidden rounded-3xl p-8 shadow-sm lg:col-span-2">
+          <div className="card-glow glass relative overflow-hidden rounded-3xl p-8 shadow-sm max-w-2xl w-full">
               <div className="absolute -right-16 -top-16 h-52 w-52 rounded-full bg-gradient-to-br from-brand-500/30 to-violet-500/30 blur-3xl" />
               <h3 className="text-xl font-bold text-slate-900 dark:text-white">Get in touch</h3>
               <p className="mt-2 text-sm leading-relaxed text-slate-600 dark:text-slate-300">
@@ -52,7 +52,7 @@ export function Contact() {
                   <div>
                     <div className="font-semibold">Email</div>
                     <a className="text-slate-500 hover:text-brand-600 dark:text-slate-400 dark:hover:text-brand-300" href="mailto:divyanshkande@gmail.com">
-                      divyanshkande@gmail.com
+                      divyanshkande04@gmail.com
                     </a>
                   </div>
                 </div>
@@ -95,71 +95,7 @@ export function Contact() {
             </div>
           </Reveal>
 
-          {/* Right — Form */}
-          <Reveal delay={0.1}>
-            <form
-              onSubmit={onSubmit}
-              className="card-glow glass relative overflow-hidden rounded-3xl p-8 shadow-sm lg:col-span-3"
-            >
-              <div className="grid gap-5 sm:grid-cols-2">
-                <label className="block">
-                  <span className="text-xs font-semibold text-slate-600 dark:text-slate-300">Name</span>
-                  <input
-                    required
-                    value={form.name}
-                    onChange={(e) => setForm({ ...form, name: e.target.value })}
-                    className="mt-2 block w-full rounded-xl border border-slate-200 bg-white/70 px-4 py-3 text-sm text-slate-800 outline-none transition focus:border-brand-500 focus:ring-4 focus:ring-brand-500/10 dark:border-white/10 dark:bg-white/5 dark:text-slate-100"
-                    placeholder="Your full name"
-                  />
-                </label>
-                <label className="block">
-                  <span className="text-xs font-semibold text-slate-600 dark:text-slate-300">Email</span>
-                  <input
-                    required
-                    type="email"
-                    value={form.email}
-                    onChange={(e) => setForm({ ...form, email: e.target.value })}
-                    className="mt-2 block w-full rounded-xl border border-slate-200 bg-white/70 px-4 py-3 text-sm text-slate-800 outline-none transition focus:border-brand-500 focus:ring-4 focus:ring-brand-500/10 dark:border-white/10 dark:bg-white/5 dark:text-slate-100"
-                    placeholder="you@example.com"
-                  />
-                </label>
-              </div>
-              <label className="mt-5 block">
-                <span className="text-xs font-semibold text-slate-600 dark:text-slate-300">Message</span>
-                <textarea
-                  required
-                  rows={6}
-                  value={form.message}
-                  onChange={(e) => setForm({ ...form, message: e.target.value })}
-                  className="mt-2 block w-full resize-none rounded-xl border border-slate-200 bg-white/70 px-4 py-3 text-sm text-slate-800 outline-none transition focus:border-brand-500 focus:ring-4 focus:ring-brand-500/10 dark:border-white/10 dark:bg-white/5 dark:text-slate-100"
-                  placeholder="Tell me about your project, role or idea…"
-                />
-              </label>
-
-              <div className="mt-6 flex flex-wrap items-center justify-between gap-4">
-                <p className="text-xs text-slate-500 dark:text-slate-400">
-                  I'll respond within 24 hours.
-                </p>
-                <motion.button
-                  whileHover={{ y: -2 }}
-                  whileTap={{ scale: 0.97 }}
-                  type="submit"
-                  disabled={sent}
-                  className="inline-flex items-center gap-2 rounded-xl bg-gradient-to-r from-brand-600 to-violet-600 px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-brand-600/25 transition hover:shadow-xl hover:shadow-brand-600/30 disabled:opacity-80"
-                >
-                  {sent ? (
-                    <>
-                      <FiCheckCircle /> Message Sent
-                    </>
-                  ) : (
-                    <>
-                      <FiSend /> Send Message
-                    </>
-                  )}
-                </motion.button>
-              </div>
-            </form>
-          </Reveal>
+          
         </div>
       </div>
     </section>

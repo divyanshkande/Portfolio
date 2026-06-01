@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { FiExternalLink, FiGithub } from 'react-icons/fi';
+import { FiGithub } from 'react-icons/fi';
 import { Reveal } from './Reveal';
 import { SectionHeading } from './About';
 
@@ -13,7 +13,7 @@ const projects = [
     image:
       'https://images.unsplash.com/photo-1554224155-6726b3ff858f?q=80&w=1400&auto=format&fit=crop',
     github: 'https://github.com/divyanshkande/finsage',
-    live: 'https://github.com/divyanshkande/finsage',
+    
     accent: 'from-emerald-500/80 to-teal-500/80',
   },
   {
@@ -25,7 +25,7 @@ const projects = [
     image:
       'https://images.unsplash.com/photo-1488085061387-422e29b40080?q=80&w=1400&auto=format&fit=crop',
     github: 'https://github.com/divyanshkande/raahi',
-    live: 'https://github.com/divyanshkande/raahi',
+   
     accent: 'from-sky-500/80 to-indigo-500/80',
   },
   {
@@ -36,8 +36,8 @@ const projects = [
     tech: ['Python', 'YOLOv8', 'OpenCV'],
     image:
       'https://images.unsplash.com/photo-1549366021-9f761d450615?q=80&w=1400&auto=format&fit=crop',
-    github: 'https://github.com/divyanshkande/wildlife-detection',
-    live: 'https://github.com/divyanshkande/wildlife-detection',
+    github: 'https://github.com/divyanshkande/Wildlife-Animal-Detection-Using-Computer-Vision',
+    
     accent: 'from-amber-400/80 to-orange-500/80',
   },
 ];
@@ -101,16 +101,12 @@ export function Projects() {
                     ))}
                   </div>
 
-                  <div className="mt-5 flex items-center gap-3">
-                    <span className="inline-flex items-center gap-2 rounded-xl bg-slate-900 px-4 py-2 text-xs font-semibold text-white transition group-hover:bg-brand-600 dark:bg-white dark:text-slate-900">
-                      <FiGithub className="h-4 w-4" />
-                      GitHub
-                    </span>
-                    <span className="inline-flex items-center gap-2 rounded-xl border border-slate-300 bg-white/70 px-4 py-2 text-xs font-semibold text-slate-700 dark:border-white/10 dark:bg-white/5 dark:text-slate-200">
-                      <FiExternalLink className="h-4 w-4" />
-                      Live Demo
-                    </span>
-                  </div>
+    <div className="mt-5">
+  <span className="inline-flex items-center gap-2 rounded-xl bg-slate-900 px-4 py-2 text-xs font-semibold text-white transition group-hover:bg-brand-600 dark:bg-white dark:text-slate-900">
+    <FiGithub className="h-4 w-4" />
+    View Repository
+  </span>
+</div>
                 </div>
               </motion.a>
             </Reveal>
