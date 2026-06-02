@@ -19,12 +19,26 @@ export function Contact() {
     }, 3500);
   };
 
-  const socials = [
-    { icon: <FiLinkedin className="h-5 w-5" />, label: 'LinkedIn', href: 'https://www.linkedin.com/in/divyanshkande', color: 'from-sky-500 to-blue-600' },
-    { icon: <FiGithub className="h-5 w-5" />, label: 'GitHub', href: 'https://github.com/divyanshkande', color: 'from-slate-700 to-slate-900' },
-    { icon: <FiMail className="h-5 w-5" />, label: 'Email', href: 'mailto:divyanshkande@gmail.com', color: 'from-rose-500 to-pink-600' },
-    { icon: <FiMapPin className="h-5 w-5" />, label: 'India', href: '#', color: 'from-emerald-500 to-teal-600' },
-  ];
+const socials = [
+  {
+    icon: <FiLinkedin className="h-5 w-5" />,
+    label: 'LinkedIn',
+    href: 'https://www.linkedin.com/in/divyanshkande',
+    color: 'from-sky-500 to-blue-600',
+  },
+  {
+    icon: <FiGithub className="h-5 w-5" />,
+    label: 'GitHub',
+    href: 'https://github.com/divyanshkande',
+    color: 'from-slate-700 to-slate-900',
+  },
+  {
+  icon: <FiMail className="h-5 w-5" />,
+  label: 'Email',
+  href: 'https://mail.google.com/mail/?view=cm&fs=1&to=divyanshkande04@gmail.com',
+  color: 'from-rose-500 to-pink-600',
+}
+];
 
   return (
     <section id="contact" className="relative section-padding">
@@ -51,9 +65,14 @@ export function Contact() {
                   </span>
                   <div>
                     <div className="font-semibold">Email</div>
-                    <a className="text-slate-500 hover:text-brand-600 dark:text-slate-400 dark:hover:text-brand-300" href="mailto:divyanshkande@gmail.com">
-                      divyanshkande04@gmail.com
-                    </a>
+                    <a
+  href="https://mail.google.com/mail/?view=cm&fs=1&to=divyanshkande04@gmail.com"
+  target="_blank"
+  rel="noreferrer"
+  className="text-slate-500 hover:text-brand-600"
+>
+  divyanshkande04@gmail.com
+</a>
                   </div>
                 </div>
                 <div className="flex items-center gap-3 text-sm text-slate-700 dark:text-slate-200">
@@ -71,7 +90,7 @@ export function Contact() {
                 <div className="text-xs font-semibold uppercase tracking-wider text-slate-500 dark:text-slate-400">
                   Find me online
                 </div>
-                <div className="mt-3 grid grid-cols-4 gap-3">
+                <div className="mt-3 grid grid-cols-3 gap-3">
                   {socials.map((s) => (
                     <motion.a
                       key={s.label}

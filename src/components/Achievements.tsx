@@ -6,7 +6,7 @@ import { SectionHeading } from './About';
 const achievements = [
   {
     title: 'India Innovates 2026 — Finalist',
-    detail: 'Top 0.01% among 25,000+ teams nationwide.',
+    detail: 'Top 0.01% among 25,000+ teams nationwide, organized at Bharat Mandapam, New Delhi',
     color: 'from-amber-400 via-orange-500 to-rose-500',
     icon: <FiAward className="h-8 w-8" />,
     medal: '🥇',

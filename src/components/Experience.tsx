@@ -20,7 +20,7 @@ const experiences = [
     icon: <FiBriefcase className="h-5 w-5" />,
     title: 'Backend Project Experience',
     org: 'Full-stack Projects',
-    time: '2024 — 2026',
+    time: '2025 — Ongoing',
     bullets: [
       'Designed REST APIs with Spring Boot, layered architecture and DTO patterns.',
       'Built JWT + RBAC authentication systems and MySQL schema optimization.',

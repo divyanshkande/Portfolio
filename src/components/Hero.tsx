@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
-import { FiArrowRight, FiDownload, FiGithub, FiLinkedin, FiMail } from 'react-icons/fi';
+import { FiArrowRight, FiDownload } from 'react-icons/fi';
 import { Reveal } from './Reveal';
 import profileImage from '../assets/profile.jpeg';
 import Resume from '../assets/Resume.pdf';
@@ -77,10 +77,8 @@ export function Hero() {
             </h1>
 
             <p className="mt-6 max-w-2xl text-lg leading-relaxed text-slate-600 dark:text-slate-300">
-              Building <span className="font-semibold text-slate-800 dark:text-white">scalable software</span>,{' '}
-              <span className="font-semibold text-slate-800 dark:text-white">intelligent systems</span>, and
-              impactful <span className="font-semibold text-slate-800 dark:text-white">digital experiences</span>.
-            </p>
+  Software Engineer passionate about full-stack development, machine learning, and solving real-world problems through technology.
+</p>
             <p className="mt-3 max-w-2xl text-base text-slate-500 dark:text-slate-400">
               Aspiring Software Engineer specializing in Full Stack Development, Backend Engineering, and AI-powered applications.
             </p>
@@ -103,33 +101,7 @@ export function Hero() {
               </a>
             </div>
 
-            <div className="mt-8 flex items-center gap-5 text-slate-500 dark:text-slate-400">
-              <a
-                aria-label="GitHub"
-                href="https://github.com/divyanshkande"
-                target="_blank"
-                rel="noreferrer"
-                className="transition hover:-translate-y-0.5 hover:text-brand-600 dark:hover:text-brand-300"
-              >
-                <FiGithub className="h-5 w-5" />
-              </a>
-              <a
-                aria-label="LinkedIn"
-                href="https://www.linkedin.com/in/divyanshkande"
-                target="_blank"
-                rel="noreferrer"
-                className="transition hover:-translate-y-0.5 hover:text-brand-600 dark:hover:text-brand-300"
-              >
-                <FiLinkedin className="h-5 w-5" />
-              </a>
-              <a
-                aria-label="Email"
-                href="mailto:divyanshkande04@gmail.com"
-                className="transition hover:-translate-y-0.5 hover:text-brand-600 dark:hover:text-brand-300"
-              >
-                <FiMail className="h-5 w-5" />
-              </a>
-            </div>
+           
           </motion.div>
 
           {/* Right */}

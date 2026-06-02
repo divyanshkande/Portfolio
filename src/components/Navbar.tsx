@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { FiMenu, FiX, FiMoon, FiSun } from 'react-icons/fi';
-import { useTheme } from '../theme/ThemeContext';
+import { FiMenu, FiX } from 'react-icons/fi';
+
 
 const links = [
   { label: 'Home', href: '#home' },
@@ -19,7 +19,7 @@ export function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
   const [active, setActive] = useState('#home');
-  const { theme, toggleTheme } = useTheme();
+  
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 20);
@@ -64,8 +64,8 @@ export function Navbar() {
               DK
             </span>
             <span className="hidden sm:block text-base">
-              Divyansh <span className="gradient-text">Kande</span>
-            </span>
+  Divyansh Kande
+</span>
           </a>
 
           <nav className="hidden lg:flex items-center gap-1">
@@ -91,24 +91,8 @@ export function Navbar() {
             ))}
           </nav>
 
-          <div className="flex items-center gap-2">
-            <button
-              aria-label="Toggle theme"
-              onClick={toggleTheme}
-              className="grid h-10 w-10 place-items-center rounded-xl border border-slate-200 bg-white/60 text-slate-700 transition-all hover:scale-105 hover:text-brand-600 dark:border-white/10 dark:bg-white/5 dark:text-slate-200 dark:hover:text-brand-300"
-            >
-              <AnimatePresence mode="wait" initial={false}>
-                <motion.span
-                  key={theme}
-                  initial={{ rotate: -90, opacity: 0 }}
-                  animate={{ rotate: 0, opacity: 1 }}
-                  exit={{ rotate: 90, opacity: 0 }}
-                  transition={{ duration: 0.25 }}
-                >
-                  {theme === 'dark' ? <FiSun className="text-amber-400" /> : <FiMoon />}
-                </motion.span>
-              </AnimatePresence>
-            </button>
+          <div className="flex items-center">
+           
 
             <button
               aria-label="Open menu"

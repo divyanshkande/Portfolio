@@ -14,7 +14,8 @@ import {
   SiGit,
   SiGithub,
   SiPostman,
-  SiLinux,
+
+ 
 } from 'react-icons/si';
 import {
   FiCpu,
@@ -89,7 +90,7 @@ const categories: Category[] = [
     ],
   },
   {
-    title: 'Cloud & Tools',
+    title: 'Tools',
     description: 'Version control, deployment and debugging.',
     icon: <FiCloud className="h-5 w-5" />,
     color: 'from-sky-500 to-indigo-500',
@@ -97,7 +98,11 @@ const categories: Category[] = [
       { name: 'Git', icon: <SiGit /> },
       { name: 'GitHub', icon: <SiGithub /> },
       { name: 'Postman', icon: <SiPostman /> },
-      { name: 'Linux', icon: <SiLinux /> },
+      {
+  name: 'VS Code',
+  icon: <span>VS</span>
+},
+     
     ],
   },
   {
@@ -137,30 +142,17 @@ export function Skills() {
                   </div>
                 </div>
 
-                <ul className="mt-6 space-y-4">
-                  {cat.skills.map((s) => (
-                    <li key={s.name}>
-                      <div className="mb-1.5 flex items-center justify-between text-sm">
-                        <span className="flex items-center gap-2 font-medium text-slate-700 dark:text-slate-200">
-                          <span className={`inline-flex h-6 w-6 items-center justify-center rounded-md bg-gradient-to-br ${cat.color} text-white`}>
-                            <span className="text-xs">{s.icon}</span>
-                          </span>
-                          {s.name}
-                        </span>
-                        <span className="text-xs font-semibold text-slate-500 dark:text-slate-400">{s.level}%</span>
-                      </div>
-                      <div className="progress-track">
-                        <motion.div
-                          className="progress-fill"
-                          initial={{ width: 0 }}
-                         
-                          viewport={{ once: true, margin: '-80px' }}
-                          transition={{ duration: 1.1, ease: [0.22, 1, 0.36, 1] }}
-                        />
-                      </div>
-                    </li>
-                  ))}
-                </ul>
+               <div className="mt-6 flex flex-wrap gap-2">
+  {cat.skills.map((s) => (
+    <span
+      key={s.name}
+      className="inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white/70 px-3 py-2 text-sm font-medium text-slate-700 dark:border-white/10 dark:bg-white/5 dark:text-slate-200"
+    >
+      {s.icon}
+      {s.name}
+    </span>
+  ))}
+</div>
               </motion.div>
             </Reveal>
           ))}
