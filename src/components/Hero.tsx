@@ -77,7 +77,7 @@ export function Hero() {
             </h1>
 
             <p className="mt-6 max-w-2xl text-lg leading-relaxed text-slate-600 dark:text-slate-300">
-  Software Engineer passionate about full-stack development, machine learning, and solving real-world problems through technology.
+  Software Engineer passionate about full-stack development and solving real-world problems through technology.
 </p>
             <p className="mt-3 max-w-2xl text-base text-slate-500 dark:text-slate-400">
               Aspiring Software Engineer specializing in Full Stack Development, Backend Engineering, and AI-powered applications.

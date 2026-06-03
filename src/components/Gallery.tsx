@@ -4,11 +4,11 @@ import { FiX, FiZoomIn } from 'react-icons/fi';
 import { Reveal } from './Reveal';
 import { SectionHeading } from './About';
 import atfrontofmandapam from '../assets/atfrontofmandapam.jpeg';
-import insidebharatmandapam from '../assets/insidebharatmandapam.jpeg';
+import delhicertificate from '../assets/delhicertificate.jpeg';
 import newdelhiteam from '../assets/newdelhiteam.jpeg';
 import hacksagonaudi from '../assets/hacksagonaudi.jpeg';
 import hacksagoninside from '../assets/hacksagoninside.jpeg';
-import hacksagonoutside from '../assets/hacksagonoutside.jpeg';
+import hacksagoncertificate from '../assets/hacksagoncertificate.png';
 
 const photos = [
   {
@@ -33,13 +33,13 @@ const photos = [
    
   },
   {
-    src: insidebharatmandapam,
+    src: delhicertificate,
   
     
     tall: true,
   },
   {
-    src: hacksagonoutside,
+    src: hacksagoncertificate,
    
   
   },
